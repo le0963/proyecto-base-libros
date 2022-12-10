@@ -1,0 +1,10 @@
+docker run -it -d -p 27017:27017 --name mongomintic mongo:4.4.6
+sudo apt install mongo-clients
+https://www.cherryservers.com/blog/how-to-install-and-start-using-mongodb-on-ubuntu-20-04
+https://github.com/le0963/apache_mintic.git
+
+mongo localhost:27017
+
+docker build -t mintic .
+
+docker run -d --name mycontainer -p 8000:8000 mintic
